@@ -1,4 +1,4 @@
 1. Function Parsing
 2. 괄호 연산자 Parsing
 3. VQL-web 버젼 개발
-4. VQL용 JUnit code 작성 모듈 개발
+4. VQL용 JUnit code 작성 모듈 개발 
