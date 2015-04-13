@@ -3,6 +3,8 @@
 
 public class QueryCommVar {
 	
+	public static final String QUERY_PARSER_VERSION = "20140413_00";	
+	
 	// PRIMITIVE TYPE
 	public enum TYPE_NAME{
 		STRING("STRING"), INTEGER("INTEGER");
