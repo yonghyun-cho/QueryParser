@@ -32,4 +32,22 @@ public class Executor {
 		
 		return visualQueryInfo;
 	}
+	
+	public static QueryFactory execute(String queryString){
+		// 1. seperate bracket(parenthesis) "(, )"
+		BracketDistributor bracketDistributor = new BracketDistributor();
+		bracketDistributor.splitSubQuery(queryString);
+		
+		// 분리된 SubQuery 목록 
+		Map<String, QueryInfo> queryMap = bracketDistributor.getQueryMap();
+		// 분리된 함수 목록 
+		Map<String, String> functionMap = bracketDistributor.getFunctionMap();
+		// 분리된 기타 (연산자 관련 소괄호)
+		Map<String, String> otherBracketMap = bracketDistributor.getOtherBracketMap();
+		
+		// 2. set QueryFactory
+		QueryFactory visualQueryInfo = new QueryFactory(queryMap, functionMap, otherBracketMap);
+		
+		return visualQueryInfo;
+	}
 }
