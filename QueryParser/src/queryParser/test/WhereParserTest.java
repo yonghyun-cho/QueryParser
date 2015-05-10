@@ -28,7 +28,7 @@ public class WhereParserTest {
 		WhereInfo whereInfo = whereParser.parsingWhereStatement(whereStmt);
 		
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp(LGCL_OP.AND);
+		targetWhereInfo.setLogicalOp(LGCL_OP.AND);
 		
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
@@ -58,7 +58,7 @@ public class WhereParserTest {
 		WhereInfo whereInfo = whereParser.parsingWhereStatement(whereStmt);
 		
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("AND");
+		targetWhereInfo.setLogicalOp("AND");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		ConditionInfo conditionInfo = new ConditionInfo();
@@ -106,7 +106,7 @@ public class WhereParserTest {
 		WhereInfo whereInfo = whereParser.parsingWhereStatement(whereStmt);
 		
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("AND");
+		targetWhereInfo.setLogicalOp("AND");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		ConditionInfo conditionInfo = new ConditionInfo();
@@ -170,7 +170,7 @@ public class WhereParserTest {
 		WhereInfo whereInfo = whereParser.parsingWhereStatement(whereStmt);
 		
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("AND");
+		targetWhereInfo.setLogicalOp("AND");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		ConditionInfo conditionInfo = new ConditionInfo();
@@ -237,7 +237,7 @@ public class WhereParserTest {
 		
 		////
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("OR");
+		targetWhereInfo.setLogicalOp("OR");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		//
@@ -258,7 +258,7 @@ public class WhereParserTest {
 		
 		////
 		WhereInfo subWhereInfo = new WhereInfo();
-		subWhereInfo.setRelationOp("AND");
+		subWhereInfo.setLogicalOp("AND");
 		List<WhereType> subConditionList = new ArrayList<WhereType>();
 		
 		//
@@ -314,7 +314,7 @@ public class WhereParserTest {
 		
 		////
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("OR");
+		targetWhereInfo.setLogicalOp("OR");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		//
@@ -335,7 +335,7 @@ public class WhereParserTest {
 		
 		////
 		WhereInfo subWhereInfo = new WhereInfo();
-		subWhereInfo.setRelationOp("AND");
+		subWhereInfo.setLogicalOp("AND");
 		List<WhereType> subConditionList = new ArrayList<WhereType>();
 		
 		//
@@ -410,7 +410,7 @@ public class WhereParserTest {
 		WhereInfo whereInfo = whereParser.parsingWhereStatement(whereStmt);
 		
 		WhereInfo targetWhereInfo = new WhereInfo();
-		targetWhereInfo.setRelationOp("AND");
+		targetWhereInfo.setLogicalOp("AND");
 		List<WhereType> conditionList = new ArrayList<WhereType>();
 
 		ConditionInfo conditionInfo = new ConditionInfo();

@@ -33,7 +33,7 @@ public class WhereParser {
 		if(wherType instanceof ConditionInfo){
 			whereInfo = new WhereInfo();
 			
-			whereInfo.setRelationOp(LGCL_OP.AND);
+			whereInfo.setLogicalOp(LGCL_OP.AND);
 			whereInfo.addValueToList(wherType);
 		
 		// WHERE절에 조건이 2개 이상인 경우.
@@ -60,7 +60,7 @@ public class WhereParser {
 			}
 			
 			WhereInfo whereInfo = new WhereInfo();
-			whereInfo.setRelationOp(operator);
+			whereInfo.setLogicalOp(operator);
 			
 			String[] splitContentArray = contents.split(operator.getValue());
 			List<WhereType> conditionList = this.parsingSubCondition(splitContentArray);
