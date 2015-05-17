@@ -22,7 +22,7 @@ public class QueryInfo {
 	private List<TableViewType> fromStmtInfo = new ArrayList<TableViewType>();
 	
 	// WHERE 와 JOIN 정보 통합
-	private WhereInfo whereStmtInfo = new WhereInfo();
+	private WhereInfo whereStmtInfo = null;
 	
 	public QueryInfo(String queryString) {
 		this.queryString = queryString;
